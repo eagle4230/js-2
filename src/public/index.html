@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>i-GRAD Shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app" class="wrapper">
+        <div class="top">
+            <header>
+                <div class="logo">i-GRAD</div>
+                <div class="cart">
+
+                    <filter-el></filter-el>
+                    <cart ref="cart"></cart>
+                </div>
+            </header>
+            <main>
+                <error ref="error"></error>
+                <products ref="products"></products>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="footer-card">
+                <p class="footer-title">Контакты</p>
+                <p class="citi">г. Москва,</p>
+                <p class="uliza">ул. Маршала Крюкова,</p>
+                <p class="house">д. 53, стр. 3</p>
+            </div>
+            <div class="footer-card">
+                <p class="footer-title">Помощь и поддержка</p>
+                <p class="deliv">Доставка</p>
+                <p class="cach">Способы оплаты</p>
+                <p class="garant">Гарантия</p>
+            </div>
+            <div class="footer-card">
+                <p class="footer-title">Мы в социалных сетях</p>
+                <p class="vk">ВКонтакте</p>
+                <p class="tlg">Telegram</p>
+            </div>
+        </footer>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
